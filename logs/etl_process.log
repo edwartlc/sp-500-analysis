@@ -1,0 +1,44 @@
+2024-07-05 15:44:36,585 - INFO - Extrayendo datos de compañías del S&P 500
+2024-07-05 15:44:39,819 - INFO - Datos de compañías del S&P 500 extraídos
+2024-07-05 15:44:39,837 - INFO - Extrayendo datos precios de cierre para S&P 500 desde 2024-01-01 hasta 2024-03-31
+2024-07-05 15:45:45,901 - ERROR - Failed to get ticker 'FRC' reason: HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=10)
+2024-07-05 15:46:07,441 - ERROR - 
+13 Failed downloads:
+2024-07-05 15:46:07,441 - ERROR - ['DISH', 'CDAY', 'RE', 'ATVI', 'FRC', 'PKI', 'PEAK', 'ABC', 'BRK.B', 'FLT']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-07-05 15:46:07,441 - ERROR - ['SIVB']: YFInvalidPeriodError("%ticker%: Period 'max' is invalid, must be one of ['1d', '5d']")
+2024-07-05 15:46:07,443 - ERROR - ['BF.B']: YFPricesMissingError('$%ticker%: possibly delisted; No price data found  (1d 2024-01-01 -> 2024-03-31)')
+2024-07-05 15:46:07,443 - ERROR - ['BKR']: ReadTimeout(ReadTimeoutError("HTTPSConnectionPool(host='query2.finance.yahoo.com', port=443): Read timed out. (read timeout=10)"))
+2024-07-05 15:46:07,686 - INFO - Datos precios de cierre extraídos para compañías del S&P 500
+2024-07-05 15:46:07,686 - INFO - Transformando datos S&P 500
+2024-07-05 15:46:07,692 - INFO - Datos S&P 500 transformados exitosamente
+2024-07-05 15:46:07,692 - INFO - Transformando datos precios de cierre S&P 500
+2024-07-05 15:46:07,708 - INFO - Datos precios de cierre transformados exitosamente
+2024-07-05 15:46:07,708 - INFO - Guardando datos transformados S&P 500 en ./data\listado_empresas_S&P_500.csv
+2024-07-05 15:46:07,718 - INFO - Datos S&P 500 guardados exitosamente
+2024-07-05 15:46:07,718 - INFO - Guardando datos transformados closing prices S&P 500 en ./data\closing_prices_S&P_500.csv
+2024-07-05 15:46:07,832 - INFO - Datos closing price S&P 500 guardados exitosamente
+2024-07-05 15:46:07,833 - INFO - Insertando datos en la tabla CompanyProfiles
+2024-07-05 15:46:07,912 - INFO - Datos insertados con éxito en la tabla CompanyProfiles
+2024-07-05 15:46:07,913 - INFO - Insertando datos en la tabla Companies
+2024-07-05 15:46:08,773 - INFO - Datos insertados con éxito en la tabla Companies2024-08-06 07:47:10,517 - INFO - Extrayendo datos de compañías del S&P 500
+2024-08-06 07:47:11,383 - INFO - Datos de compañías del S&P 500 extraídos
+2024-08-06 07:47:11,384 - INFO - Extrayendo datos precios de cierre para S&P 500 desde 2024-01-01 hasta 2024-06-30
+2024-08-06 07:47:56,170 - ERROR - 
+14 Failed downloads:
+2024-08-06 07:47:56,171 - ERROR - ['A123', 'PEAK', 'ATVI', 'BRK.B', 'RE', 'DISH', 'FRC', 'FLT', 'PKI', 'CDAY', 'ABC']: YFTzMissingError('$%ticker%: possibly delisted; No timezone found')
+2024-08-06 07:47:56,171 - ERROR - ['SIVB']: YFInvalidPeriodError("%ticker%: Period 'max' is invalid, must be one of ['1d', '5d']")
+2024-08-06 07:47:56,171 - ERROR - ['BF.B']: YFPricesMissingError('$%ticker%: possibly delisted; No price data found  (1d 2024-01-01 -> 2024-06-30)')
+2024-08-06 07:47:56,172 - ERROR - ['PXD']: YFChartError('%ticker%: No data found, symbol may be delisted')
+2024-08-06 07:47:56,641 - INFO - Datos precios de cierre extraídos para compañías del S&P 500
+2024-08-06 07:47:56,641 - INFO - Transformando datos S&P 500
+2024-08-06 07:47:56,647 - INFO - Datos S&P 500 transformados exitosamente
+2024-08-06 07:47:56,648 - INFO - Transformando datos precios de cierre S&P 500
+2024-08-06 07:47:56,705 - INFO - Datos precios de cierre transformados exitosamente
+2024-08-06 07:47:56,706 - INFO - Guardando datos transformados S&P 500 en ./data\listado_empresas_S&P_500.csv
+2024-08-06 07:47:56,728 - INFO - Datos S&P 500 guardados exitosamente
+2024-08-06 07:47:56,732 - INFO - Guardando datos transformados closing prices S&P 500 en ./data\closing_prices_S&P_500.csv
+2024-08-06 07:47:57,066 - INFO - Datos closing price S&P 500 guardados exitosamente
+2024-08-06 07:47:57,067 - INFO - Insertando datos en la tabla CompanyProfiles
+2024-08-06 07:47:57,639 - INFO - Datos insertados con éxito en la tabla CompanyProfiles
+2024-08-06 07:47:57,640 - INFO - Insertando datos en la tabla Companies
+2024-08-06 07:48:01,182 - INFO - Datos insertados con éxito en la tabla Companies
